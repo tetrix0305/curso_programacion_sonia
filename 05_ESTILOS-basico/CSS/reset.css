@@ -46,6 +46,5 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-h, p{
-    display: inline;
-}
+
+h1, p {display: inline;}
