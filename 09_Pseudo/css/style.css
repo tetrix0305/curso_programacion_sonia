@@ -10,3 +10,5 @@ aside p::first-line{
 section div p::before{
     content: "!!"
 }
+
+p:hover {color: brown}
