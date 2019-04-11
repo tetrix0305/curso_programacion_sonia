@@ -17,11 +17,9 @@ p{
 
 .clear:both;
 .real {
-    margin: 1rem;
+    margin: 2rem;
 }
 
-.real p:not(){
-    float: left;
-    width: 33,33%;
-    padding-left: 1rem;
+.real p:not(:first-child){
+        padding-left: 1,5rem;
 }
