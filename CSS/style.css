@@ -18,6 +18,21 @@ p:hover {
 a:visited {
         color: blue
     }
-section p:nth-child(1) {
-        color: aqua
-    }
+/*section p:nth-child(1) {
+        color: aqua*/
+ section p:nth-of-type (1) {
+    
+}
+
+            
+ }  
+
+/*{
+display: inline
+}
+*/
+
+body 
+    font-family: ¨lato, sans-serif
+header 
+{font-family: rightedus, cursive;
