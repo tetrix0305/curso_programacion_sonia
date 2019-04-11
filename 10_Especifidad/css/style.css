@@ -1,0 +1,20 @@
+section p::first-letter {
+    font-size: 4rem;
+}
+
+aside p::first-line{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+section div p::before{
+    content: "!!"
+}
+
+p:hover 
+    {color: brown
+}
+
+a:visited {
+    
+}
