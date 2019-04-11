@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin:calc(calc(100%-calc(18*5)) /10);
+    padding: 1rem;
+    background-color: beige;
+    /*border: 1px solid; */
+    display: inline-block;
+    width: 15%;
+    float: left;
+}
+
+.clear:both;
+.real {
+    margin: 1rem;
+}
+
+.real p:not(){
+    float: left;
+    width: 33,33%;
+    padding-left: 1rem;
+}

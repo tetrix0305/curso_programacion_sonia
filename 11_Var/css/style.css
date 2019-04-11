@@ -12,8 +12,8 @@ body {
 }
 
 .main-header {
-    background-color: var¨{--color-fondo};
-    color: var{--color-leetra};
+    background-color: var¨(--color-fondo);
+    color: var(--color-letra);
     padding: 2rem;
 }
 
