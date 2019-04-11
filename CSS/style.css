@@ -28,11 +28,12 @@ a:visited {
  }  
 
 /*{
-display: inline
+    display: inline
 }
 */
 
 body 
     font-family: ¨lato, sans-serif
-header 
-{font-family: rightedus, cursive;
+header {
+    font-family: rightedus, cursive;
+}
