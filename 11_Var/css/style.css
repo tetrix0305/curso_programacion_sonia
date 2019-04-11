@@ -1,0 +1,39 @@
+:root ¨{
+    --x: 12;
+    --y: 23;
+    --color-fondo: rgb(155, 74, 74);
+    --color-letra: rgb(155, 74, 74);
+        }
+
+ody {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: var¨{--color-fondo};
+    color: var{--color-leetra};
+    padding: 2rem;
+}
+
+.main-header-h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header-p {
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+}
+
+.content-wrapper {
+    margin: 2rem;
+}
+
+.main-footer {
+    background-color: var{--color-fondo};
+    color: var{--color-letra}
+    padding-top: 1.2rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
