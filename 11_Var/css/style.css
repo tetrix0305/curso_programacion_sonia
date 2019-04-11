@@ -3,6 +3,7 @@
     --y: 23;
     --color-fondo: rgb(155, 74, 74);
     --color-letra: rgb(155, 74, 74);
+    --margen-base: 2ren;
         }
 
 body {
@@ -23,16 +24,16 @@ body {
 
 .main-header-p {
     margin-bottom: 0;
-    margin-top: 0.2rem;
+    margin-top: calc(var(--margen-base) / 10);
 }
 
 .content-wrapper {
-    margin: 2rem;
+    margin: var{var(--margen-base);
 }
 
 .main-footer {
-    background-color: var{--color-fondo};
-    color: var{--color-letra}
+    background-color: var(--color-fondo);
+    color: var(--color-letra)
     padding-top: 1.2rem;
     padding-bottom: 1.5rem;
     text-align: center;
