@@ -1,23 +1,23 @@
-
-/*selector de descendientes:operador es el espacio*/
-section p {
-    color: brown
+section p::first-letter       {
+    font-size: 4rem;
 }
 
-/*Selector de hijo: operador < */
+aside p::first-line{
+    font-size: 1.3rem;
+    font-weight: bold
+}
 
-section p {
-    color: aquamarine
+section div p::before{
+    content: "Atención, importante: "
+}
+
+p:hover {
+    color: brown
     }
 
-/*Selector de hermanos adyacentes: utiliza como operador el signo +*/
-
-div+p {
-    color: aliceblue
-}
-
-    /* Selector de hermanos: operador ~ ( se saca cpm añt-gr 4 espacio, se lla virgulilla) */
-div~p{
-    color: aquamarine
-}
-
+a:visited {
+        color: blue
+    }
+section p:nth-child(1) {
+        color: aqua
+    }
