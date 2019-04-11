@@ -11,4 +11,10 @@ section div p::before{
     content: "!!"
 }
 
-p:hover {color: brown}
+p:hover 
+    {color: brown
+}
+
+a:visited {
+    
+}
