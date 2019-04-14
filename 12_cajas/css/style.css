@@ -1,25 +1,34 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-p{
-    margin:calc(calc(100%-calc(18*5)) /10);
-    padding: 1rem;
-    background-color: beige;
-    /*border: 1px solid; */
-    display: inline-block;
-    width: 15%;
+.cuadrados p {
+    width: 18%;
     float: left;
+    margin: calc(calc(100% - calc(18%*5)) / 10);
+    padding: 1rem;
+    background-color: coral;
+    border: 1px solid; 
 }
 
-.clear:both;
+.clearfix {
+    clear: both;
+}
+
 .real {
     margin: 2rem;
 }
 
-.real p:not(:first-child){
-        padding-left: 1,5rem;
+.real p {
+    float: left;
+    width: 33.33%;
 }
+
+.real p:not(:first-child) {
+    padding-left: 1.5rem;
+}
+ 
