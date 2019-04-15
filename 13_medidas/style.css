@@ -1,13 +1,24 @@
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;/* en standard en HTML 1 em equivale a 16, los ems son siempre proporcionales a la letra padre */
-    /* font-size: 16px; valores en absoluto no se deben aplicar , no son estables , en cambio los rem se calculan en cuanto al root em que es el 16px*/
-    padding: 2rem;
+section {
+    font-size: 0.8em;
+    background-color: bisque
+    height: 80vh
 }
 
-section {
-    font-size: 0.9rem;
-}
 div {
-    font-size: 0.9rem;
+    font-size: 0.8em
 }
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    /* font-size: 16px; */
+    padding: 2em;
+}
+.target:hover+.efecto {
+    /*text-indent: 2rem;*/
+    color: brown;
+}
+
+/*
+vh 
+wv*/
