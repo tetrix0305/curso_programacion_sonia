@@ -28,6 +28,8 @@ body {
  .main-menu li {}
     display: inline-block;
 
+.main-menu a {}  
+
 body> header>nav
 
 .content-wrapper {
