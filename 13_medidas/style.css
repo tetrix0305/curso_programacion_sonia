@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,3 +19,31 @@
     </section>
 </body>
 </html>
+=======
+section {
+    font-size: 0.8em;
+    background-color: bisque;
+    min-height: 80vh;
+    /* overflow: auto; */
+}
+
+div {
+    font-size: 0.8em
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    /* font-size: 16px; */
+    padding: 2em;
+}
+.target:hover+.efecto  {
+    /* text-indent: 2rem; */
+    color: brown;
+}
+ /*
+ vh
+ vw
+
+ */
+>>>>>>> 337f7faaaec165b472b907d9598d332733489f4e
