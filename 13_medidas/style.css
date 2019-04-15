@@ -1,7 +1,8 @@
 section {
     font-size: 0.8em;
     background-color: bisque
-    height: 80vh
+    min-height: 80vh;
+    /*overflow:auto;*/
 }
 
 div {
