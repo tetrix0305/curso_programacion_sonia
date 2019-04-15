@@ -1,8 +1,8 @@
 section {
     font-size: 0.8em;
-    background-color: bisque
+    background-color: bisque;
     min-height: 80vh;
-    /*overflow:auto;*/
+    /* overflow: auto; */
 }
 
 div {
@@ -15,11 +15,12 @@ p {
     /* font-size: 16px; */
     padding: 2em;
 }
-.target:hover+.efecto {
-    /*text-indent: 2rem;*/
+.target:hover+.efecto  {
+    /* text-indent: 2rem; */
     color: brown;
 }
+ /*
+ vh
+ vw
 
-/*
-vh 
-wv*/
+ */
