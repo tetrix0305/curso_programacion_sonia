@@ -27,6 +27,10 @@ body {
 
  .main-menu li {}
     display: inline-block;
+menu a {
+    color: aquamarine
+    
+}
 
 .main-menu a {}  
 
