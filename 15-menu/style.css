@@ -18,6 +18,15 @@ body {
     margin-bottom: 0;
     margin-top: 0.2rem;
 }
+ .main-menu {}
+
+ .main-menu ol {}
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+ .main-menu li {}
+    display: inline-block;
 
 body> header>nav
 
@@ -25,6 +34,10 @@ body> header>nav
     margin: 2rem;
 }
 
+.main-menu {
+    border: 1px solid;
+    border-radius: 5px;
+}
 .main-footer {
     background-color: brown;
     color: bisque;
