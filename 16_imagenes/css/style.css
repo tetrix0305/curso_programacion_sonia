@@ -21,11 +21,14 @@ img{
 }
 .fondos{
     height: 100vh;
-    padding: 2rem;
     background-image: url(../assets/komodo.300.jpg);
     background-repeat: no-repeat;
    /*background-size: contain;*/
-   /* background-size: cover;*/
-  
-
+    background-size: cover;
+    
 }
+.fondos h2{
+    text-align: center;
+    padding-top: 25vh;
+    color: yellow
+    }
