@@ -14,4 +14,18 @@ img{
 
 .image-wrapper-75{
     width:75%;
+
+}
+.clearfix{
+    border-top: 1px solid gainsboro
+}
+.fondos{
+    height: 100vh;
+    padding: 2rem;
+    background-image: url(../assets/komodo.300.jpg);
+    background-repeat: no-repeat;
+   /*background-size: contain;*/
+   /* background-size: cover;*/
+  
+
 }
