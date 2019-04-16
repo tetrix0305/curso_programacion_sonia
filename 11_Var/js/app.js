@@ -1,6 +1,6 @@
-let x = 12
-let y = 3
-let suma
-suma = x + y
+let x = 76
+let y = 36
+let suma 
+suma = x + y 
 console.log(suma)
-console.dir(suma)
+// console.dir(suma)
