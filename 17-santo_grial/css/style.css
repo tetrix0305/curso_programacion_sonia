@@ -64,14 +64,16 @@ body {
     display: block;
     padding: 1rem;
 }
-/*layout con display table*/
 
+/* Layout con display table */
+ 
 .content-wrapper {
     margin: 2rem;
-    display: table;
-}        
+    display: table;    
+}
+
 .main-content {
-    display:table-cell;
+    display: table-cell;
     width: 70%;
     background-color: bisque;
     padding-left: 1rem;
@@ -81,28 +83,31 @@ body {
 .main-aside {
     display: table-cell;
     width: 30%;
-    float: left;
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: gainsboro;
-    border: 1px solid;
+    border: 1px solid
 }
-/*css de la tabla*/
+
+/* CSS de la tabla*/
 
 table {
     width: 100%;
-    empty-cells:hide;
+    empty-cells: hide;
     border-collapse: collapse;
-
-table:hover{
-    border-collapse:separate;
 }
-  
 
-td,th{
+table:hover {
+    border-collapse: separate;
+}
+
+td, th {
     border: 1px solid;
 }
-/*css del footer*/
+
+
+/* CSS del footer*/
+
 .main-footer {
     background-color: brown;
     color: bisque;
