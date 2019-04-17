@@ -34,8 +34,8 @@ img{
     background-image: url(../assets/komodo.300.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    opacity:0,8;
-    z-index:10;
+    opacity:0,4;
+    /*hecho en clase el miercoles*/
     
 }
 .fondos h2{
