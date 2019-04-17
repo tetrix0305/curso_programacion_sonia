@@ -1,46 +1,66 @@
-img{
-    width: fit-content;
-    max-width: 100%
+img {
+    /* width: fit-content; */
+    max-width: 100%;
 }
-.image-wrapper-50{
+
+p {
+    text-align: justify;
+}
+
+.image-wrapper-50 {
     width: 50%;
+    /* float: left;
+    margin-right: 1rem; */
     float: right;
-    margin:-right:1rem;
+    margin-left: 1rem;
 }
 
 .image-wrapper-25 {
-        width: 25%;
+    width: 25%;
 }
 
-.image-wrapper-75{
-    width:75%;
-
+.image-wrapper-75 {
+    width: 75%;
 }
-.clearfix{
+
+.clearfix {
+    clear: both;
     border-top: 1px solid gainsboro
 }
-.fondos{
-    height: 100vh;
-    position: 
-    ;
-.fondos::after;    
-    content:"";
-    display: block;
-    height:100%;
-    widht: 100%;
-    position: absolute;;
-    top:0;
-    background-color: aquamarine;
-    background-image: url(../assets/komodo.300.jpg);
+
+
+/* .fondos {
+    height: 100vh;    
+    background-color: #468CE1;
+    background-image: url(../assets/3boats.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
-    opacity:0,4;
-    /*hecho en clase el miercoles*/
-    
+    background-size: contain;
+    background-size: cover;
+    background-blend-mode: soft-light;
+} */
+
+.fondos {
+    height: 100vh; 
+    position: relative;
 }
-.fondos h2{
+
+.fondos::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* height: 100vh;  */
+    background-color: #468CE1;
+    background-image: url(../assets/3boats.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.25;
+}
+
+.fondos h2 {
     text-align: center;
     padding-top: 25vh;
-    /*color: red*/
-    color: black
-    }
+    color: #F12524;
+}
