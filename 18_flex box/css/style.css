@@ -1,5 +1,11 @@
+section.flex{
+    display: flex;
+    border: 1px double gainsboro;
+    height: 40vh;
+ }
 p.item{
     padding: 1rem;
-    background-color: blue;
+    background-color: rgb(255, 123, 0);
+    border: 1px solid;
     
 }
