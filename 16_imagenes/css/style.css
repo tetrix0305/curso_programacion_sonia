@@ -21,13 +21,21 @@ img{
 }
 .fondos{
     height: 100vh;
-    background-color: aquamarine
+    position: 
+    ;
+.fondos::after;    
+    content:"";
+    display: block;
+    height:100%;
+    widht: 100%;
+    position: absolute;;
+    top:0;
+    background-color: aquamarine;
     background-image: url(../assets/komodo.300.jpg);
     background-repeat: no-repeat;
-   /*background-size: contain;*/
-    background-size: cover;
-    opacity: 0,5;
-    /*background-blend-mode; soft-light*/ 
+    background-size:cover;
+    opacity:0,8;
+    z-index:10;
     
 }
 .fondos h2{
