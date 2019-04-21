@@ -2,12 +2,13 @@
     box-sizing: border-box
 }
 
-/*Reseteo de los valores del body y fuente general*/
+/* Reseteo de los valores del body y fuente general */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
 .main-header {
     background-color: brown;
     color: bisque;
@@ -15,7 +16,7 @@ body {
     font-family: 'Permanent Marker', cursive;
 }
 
-/*Reseteo de los valores del h1*/
+/* Reseteo de los valores de h1*/
 .main-header h1 {
     margin: 0;
     padding: 0;
@@ -27,7 +28,9 @@ body {
     /* display: none; 
     visibility: hidden; */
 }
-/*Reseteo de los valores genericos del cualquier menu*/
+
+/* Reseteo de los valores genericos de cualquier menu*/
+
 .menu ol, .menu ul {
     list-style: none;
     margin: 0;
@@ -38,7 +41,8 @@ body {
     color: inherit;
     text-decoration: none;    
 }
-/*Menu principal*/
+
+/* Menu principal */
 .main-menu {
     border: 1px solid;
     border-radius: 5px;
@@ -54,7 +58,9 @@ body {
     display: block;
     padding: 0.7rem 1rem;
 }
-/*Secciones principales:main content y aside*/
+
+/* Secciones principales  */
+
 .main-content {
     background-color: bisque;
     padding-left: 1rem;
