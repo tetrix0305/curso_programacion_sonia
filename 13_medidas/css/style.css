@@ -1,26 +1,33 @@
+body {
+
+}
+
 section {
     font-size: 0.8em;
     background-color: bisque;
-    min-height: 80vh;
-    /* overflow: auto; */
+    width: 100%;
+    min-height: 80vh; /* Especialmente interesante para el tema de las alturas */
+    /* overflow: visible; Hace que desborde el contenido y se lleve por delante a todo.
+    overflow: hidden; Oculta lo que se salga del recuadro.
+    overflow: auto; Deja que el navegador tome la mejor decisión.  */
 }
 
 div {
-    font-size: 0.8em
+    font-size: 0.9em;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
-    /* font-size: 16px; */
+    font-size: 1rem;
     padding: 2em;
 }
-.target:hover+.efecto  {
-    /* text-indent: 2rem; */
-    color: brown;
-}
- /*
- vh
- vw
 
+/* Conclusiones generales:
+1) Todos los elementos que hemos visto, tanto pseudo elementos como pseudo clases se pueden aplicar a cualquier selector.
+2) Las únicas relaciones válidas en CSS son hijo, primer hijo, hermano y hermano adyacente.
+3) Un menú es una lista de links que se hacen con un "ul" u "ol" */
+
+/* 
+vh (viewport height)
+vw (viewport width)
  */
