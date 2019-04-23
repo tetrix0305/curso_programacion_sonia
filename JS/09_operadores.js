@@ -42,7 +42,8 @@ if (x)- 18
 
 
 
-
+edad - 25
+1= (edad)= 18} 
 
 47 // Objetos en Notacion J5ON
 let user - {
@@ -57,3 +58,14 @@ console.log(ususarios{1})
 
 us
 
+
+
+
+
+
+ let mensajes = {
+    'Bienvenido al casino',
+    'No se admiten menores de edad'
+}
+
+console.log(mensaje )
