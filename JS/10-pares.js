@@ -75,3 +75,7 @@ if (isPar){
 }
 let i = (isPar) ? 0 : 1
  let number = 23
+
+function mostrar 2 (code,num) {
+    }
+ let mensajes = [ 'El numero $ {num}]
