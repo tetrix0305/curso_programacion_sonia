@@ -4,10 +4,12 @@
  /**
   * function calculaQueEs
   * @param num: number /*yo escribo aqui como me gustaria que me hicera las cosa*/
-  * returns: number /*el dos puntos indica que lo que viene es el tipo*/
+  * @return: number /*el dos puntos indica que lo que viene es el tipo*/
   * Posibles valores
   *     0 (por ejemplo 0 para los pares)
   *     1 (1 para los impares)
+  *     2 numeros decimales
+  *     3 no numeros
   **/
 
     function calculaQueEs(num){
@@ -24,6 +26,17 @@
             r = 1
             }
             //return num % 2
+
+    function calculaQueEs (num) {
+        let
+        if (isNaN(num)) {
+            return 3 /* en vez de poner return se pone r*/
+        }  (parseInt)(num)
+        
+            else (
+            return num % 2 /* en vez de poner return se pone r*/
+        )
+    }
         
   /**
    * Function isPar (esto es una funcion buliana)
