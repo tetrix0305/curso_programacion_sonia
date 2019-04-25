@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Alejandro Cerezo">
-    <meta name="description" content="Ejercicios del curso Desarrollo Front en CIFE">
-    <meta name="keywords" content="Web, HTML, desarrollo front">
+    <meta name="author" content="Aitor Gajardo">
+    <meta name="description" content="Ejercicios del curso Web FrontEnd">
+    <meta name="keywords" content="web, HTML, desarrollo front">
+    <!-- Tienen importancia, pero no trascendental, en los buscadores. Antes se les podía engañar, pero ahora a Google no se le puede engañar porque con sus algoritmos de SEO ve si coinciden las palabras clave con el resto de la página -->
     <meta name="generator" content="Visual Studio Code">
+    <!-- Suele ser donde le indicamos el tipo de programa que hemos usado para generar nuestra web -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario - Curso Front</title>
-    <!-- <style>
-        body {background-color: bisque}
-    </style> -->
+    <!-- Este es un formato de metadato que ya no se utiliza (el formato al que me refiero es http-equiv) -->
+    <title>Formulario - Curso</title>
+    <!-- Es requisito indispensable que cualquier documento HTML tenga title, porque si no, no nos validará la web -->
+    <!-- <style></style> puede ir aquí aunque no es recomendable -->
     <link rel="stylesheet" href="./css/style.css">
     <script>
-        console.log('Hola mundo')
-    </script>
+        console.log('Hola Mundo')
+    </script> <!-- Esto nos sirve para escribir JS -->
     <script src="./js/app.js"></script>
+    <!-- Una vez que un script tiene un src ignora lo que hay entre las etiquetas de apertura y de cierre -->
 </head>
+
 <body>
     <header>
-        <h1>Elementos de HTML 🔥 αβ</h1>
+        <!-- Nos permite definir mucho mejor la estructura de nuestra web -->
+        <h1>Elementos de HTML ☢️αβγ</h1> <!-- Se pintan bien porque usan UNICODE -->
         <nav>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./index.html#bloques">Bloques</a></li>
-                <li><a href="./index.html#en_linea">En-linea</a></li>
+                <!-- Esto hace que no haga nada y se quede donde estamos sin recargar la página -->
+                <li><a href="./index.html#bloques">En bloque</a></li>
+                <li><a href="./index.html#en_linea">En línea</a></li>
                 <li><a href="./mmedia.html">Multimedia</a></li>
                 <li><a href="#">Formulario</a></li>
+                <!-- La mejor manera de enlazar cuando se hacen páginas web son las referencias relativas al documento. Así, movamos a donde movamos nuestra web mientras mantengamos nuestra estructura de carpetas interna nos servirá. -->
             </ul>
         </nav>
     </header>
@@ -37,91 +45,98 @@
                 <header>
                     <h2>Formulario</h2>
                 </header>
-                <p>Están disponibles los siguientes controles</p>
+                <p>Están disponibles los siguientes controles</p> <!-- un control es aquello que le permite al usuario controlar algo -->
                 <ul>
-                    <li>input - text</li>
-                    <li>text area</li>
-                    <li>checkbox</li>
-                    <li>radio butons</li>
-                    <li>select / options</li>
+                    <li>input-text</li>
+                    <li>textarea</li>
+                    <li>checkbox</li> <!-- Es un booleano, cuando se pulsa vale true cuando no, false -->
+                    <li>radiobuttons</li>
+                    <li>select options</li>
                     <li>botones</li>
                 </ul>
                 <h3>Ejemplo de formulario</h3>
-                <form action="https://jsonplaceholder.typicode.com/users" method="post">
-                    <!-- <ul>
-                        <li><input type="text" name="nombre" id="nombre" placeholder="Nombre"></li>
-                        <li><input type="email" name="email" id="email" placeholder="Correo"></li>
-                        <li><button type="submit">Enviar</button></li>
+                <form action="https://jsonplaceholder.typicode.com/users" method="POST"> <!-- al no poner nada en el atributo action, el formulario nos los enviamos a nosotros mismos -->
+                <!--<ul>
+                        <li></li>
                     </ul> -->
                     <fieldset>
                         <legend>Datos personales</legend>
                         <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" 
-                                placeholder="Escribe nombre y apellidos" required minlength="3">
+                            <label for="nombre">Nombre</label> <!-- el atributo for tiene que coincidir con el id del input al que hace referencia -->
+                            <input type="text" name="name" id="nombre" placeholder="¿Cuál es tu nombre?" required minlength="3"> <!-- esto funciona por pares clave-valor o nombre del elemento del input-input. Nunca se puede dejar vacío el atributo name porque si no, no nos va a salir la información. Es el único campo (name) que se decide conjuntamente entre el FrontEnd y el BackEnd --> 
                         </div>
                         <div>
                             <label for="email">Correo</label>
-                            <input type="email" name="email" id="email" placeholder="Correo" required>
-                        </div>    
+                            <input type="email" name="email" id="email" placeholder="Introduzca su email" required>  
+                        </div>
                         <div>
                             <label for="passwd">Contraseña</label>
                             <input type="password" name="passwd" id="passwd" required maxlength="4">
                         </div>
                         <div>
-                            <label for="coments">Comentarios</label>
-                            <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
-                        </div>                    
+                            <label for="">Comentarios</label>
+                            <textarea name="comments" id="comments" cols="30" rows="5"></textarea> <!-- el concepto de cols y rows no se puede meter por CSS -->
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Condiciones</legend>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi expedita voluptatibus quisquam praesentium vero nemo laborum ratione. Autem esse voluptates quasi ad, voluptatem repellendus illo aperiam amet reprehenderit quod velit.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime molestias ipsum obcaecati, qui a odit voluptatibus optio veniam libero minima, fugiat reprehenderit id? Soluta exercitationem vitae sint assumenda eveniet vel.</p>
                         <div>
-                            <input type="checkbox" name="aceptado" id="aceptado" required>
-                            <label for="aceptado">Estoy deacuerdo con las condiciones</label>
+                            <input type="checkbox" name="aceptado" id="aceptado" required> <!-- si no lo checamos no manda el dato -->
+                            <label for="aceptado">Estoy de acuerdo con las condiciones de uso y privacidad</label> <!-- por accesibilidad los label siempre tienen que tener el for bien puesto -->
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Datos del curso</legend>
-                        <div>
-                            <label for="curso">Curso</label>
-                            <select name="curso" id="curso" required>
-                                <option value="">&nbsp;</option>
-                                <optgroup label="Front">
-                                    <option value="HTML">HTML</option>
-                                    <option value="CSS">CSS</option>
-                                    <option value="JS">JavaScript</option>
-                                </optgroup>
-                                <optgroup label="Back">
-                                    <option value="JV">Java</option>
-                                    <option value="Node">NodeJS</option>                                    
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div>
-                            <p>Sede</p>
-                            <input type="radio" name="sede" id="madrid" value="MD" required>
-                            <label for="madrid">Madrid</label>
-                            <input type="radio" name="sede" id="barna" value="BN">
-                            <label for="barna">Barcelona</label>
-                            <input type="radio" name="sede" id="cadiz" value="CD">
-                            <label for="cadiz">Cádiz</label>
-                        </div>
+                        <fieldset>
+                            <legend>Datos del curso</legend>
+                            <div>
+                                <label for="curso">Curso</label>
+                                <select name="curso" id="curso" required> <!-- Con el atributo multiple conseguimos que podamos seleccionar varias a la vez -->
+                                    <option value="">&nbsp;</option> <!-- el escape &nbsp crea un espacio duro, que es una manera de crear espacios, que es un poco chapuza para solucionar que no haya nada escrito, pero que en nuestro caso nos sirve para que el validador de HTML nos lo valide -->
+                                    <optgroup label="Front"> <!-- sirve para crear grupos dentro de las opciones -->
+                                        <option value="HTML">HTML</option> <!-- el atributo es opcional. Se pueden hacer 3 cosas: 1.no ponerlo. 2.poner un nombre que no tiene nada que ver. 3. -->
+                                        <option value="CSS">CSS</option>
+                                        <option value="JS">JavaScript</option>
+                                    </optgroup>
+                                    <optgroup label="Back">
+                                        <option value="JV">JV</option>
+                                        <option value="NodeJS">Node</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div>
+                                <p>Sede</p>
+                                <input type="radio" name="sede" id="madrid" value="MD" required> <!-- poniendo el mismo name hacemos un grupo de opciones radiobutton que sería el equivalente a la etiqueta select --> <!-- En este caso el required se aplica al resto de inputs que tienen como nombre name=sede -->
+                                <label for="madrid">Madrid</label>
+                                <input type="radio" name="sede" id="barcelona" value="BC">
+                                <label for="barcelona">Barcelona</label>
+                                <input type="radio" name="sede" id="cadiz" value="CD">
+                                <label for="cadiz">Cádiz</label>
+                            </div>
+                        </fieldset>
                     </fieldset>
                     <div>
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Borrar</button>
+                        <button type="submit">Enviar</button> <!-- los input type submit no se utilizan tanto para crear botones submit porque ya existe una nueva etiqueta en HTML5 que es esta de button -->  
+                        <button type="reset">Reset</button>
                     </div>
+                    <!-- Es preferible organizar los inputs mediante div antes que por párrafos o por listas -->
                 </form>
+                <!-- <form action=""></form> = <form action="" method="get"></form> -->
             </section>
+
         </main>
-        <aside id="publici">
+        <aside id="publicidad">
             <p>Publicidad</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum officia quidem accusantium illo unde voluptatibus accusamus architecto incidunt optio! Quasi quis magni quae rerum quam numquam exercitationem vero officia?</p>
-        </aside>         
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus laboriosam quibusdam, beatae
+                asperiores nihil voluptatem consectetur deleniti harum earum omnis cum ipsa commodi blanditiis veniam
+                provident exercitationem consequatur magni?</p>
+            <p>Ea quasi itaque, vitae omnis veritatis in officia perferendis iste quaerat, odio reprehenderit amet
+                animi. Repellat tempora aliquam a dolorum voluptas corporis, dolorem fugit reiciendis quas odit, aliquid
+                voluptatum blanditiis.</p>
+        </aside>
     </div>
+
     <footer>
-        <address>Alejandro Cerezo - © CIFE</address>
+        <address>Sonia Guerrero - CIFE©</address>
     </footer>
 </body>
+
 </html>
