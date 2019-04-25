@@ -1,41 +1,47 @@
 // IF sobre valores discretos de una sola variable
-// if (x> 5)
-// if (x= 2&& y == 3)
+// if (x > 5) 
+// if (x == 2 && y == 3) 
 
-let cargo // Gerente, Seniro, Junior, Becario
+let cargo // Director, Gerente, Senior, Junior, Becario
 cargo = 'Gerente'
-// cargo = 'Senior'
-// cargo = 'Junior'
+cargo = 'Senior'
+cargo = 'Junior'
 let bonus
 
-switch (cargo.toLowerCase()){
-    case 'Director':
+switch (cargo.toLowerCase()) {
+    case 'director':
     case 'gerente':
-        bonus = 10000        
-        break;
-    case 'Senior':
+        bonus = 10000
+        break
+    case 'senior':
         bonus = 1000
+        break
     default:
         bonus = 0
         break
 }
 
+if (cargo.toLowerCase() == 'director' || 
+    cargo.toLowerCase() == 'gerente' ) {
+    bonus = 10000
+} else if (cargo.toLowerCase() == 'senior') {
+    bonus = 1000
+} else {
+    bonus = 0
+}
 
-
-
-
-console.log (´Como eres $ {cargo}, Tu bonus es $ {bonus}€´)
+console.log(`Como eres ${cargo}, tu bonus es ${bonus}€`)
 
 // En Java, C#..
-// String name = 'Pepe'
-// String namehay = UpperCase(name)
+// string name = 'Pepe'
+// string nameMay = UpperCase(name)
 
 let array = []
-array.push ()
+array.push()
 
 
 let name = 'Pepe'
-let nameMin = name.toLowerCase () /*esto es para que lo convierta en minuscula*/
-let nameMay = name.toUpperCase () /*esto es para que lo convierta en mayuscula*/
+let nameMin = name.toLowerCase()
+let nameMay = name.toUpperCase()
 
-console.log (name, nameMay, nameMay)
+console.log(name, nameMin, nameMay)

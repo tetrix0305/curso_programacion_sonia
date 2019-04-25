@@ -1,94 +1,168 @@
+/* // Tipos de Strings
+
+let cadena = 'Hola Mundo'
+cadena = "Hola Mundo"
+// ES6 aparecen los template string
+cadena = `
+Hola 
+Mundo
+`
+let user = 'Pepe'
+cadena = 'Hola ' + user + ', que tal estas'
+cadena = `Hola ${user}, que tal estas`
+
+console.log(cadena) */
+
 /**
- * /* Programa que calcula si un numero es par o impar y muestra el resultado en consola*/
+ * Programa que calcula si un número es par o impar
+ * y muestra el resultado en consola
+ * 
  */
+
  /**
-  * function calculaQueEs
-  * @param num: number /*yo escribo aqui como me gustaria que me hicera las cosa*/
-  * @return: number /*el dos puntos indica que lo que viene es el tipo*/
+  * Function calculaQueEs
+  * @param num: number
+  * @returns: number
   * Posibles valores
-  *     0 (por ejemplo 0 para los pares)
-  *     1 (1 para los impares)
+  *     0 pares
+  *     1 impares
   *     2 numeros decimales
-  *     3 no numeros
-  **/
-
-    function calculaQueEs(num){
-        let r
-        if (num % 2) { 
-            // numero par
-            r = 2
-            todos los pares su resto es 0 (la division) 
-            todos los impares su resto es 1 (la division)
-            aqui se ve el resto de la division entera
-            si aparece un 0 en if es false
-            } else {
-                // numero impares
-            r = 1
-            }
-            //return num % 2
-
-    function calculaQueEs (num) {
-        let
-        if (isNaN(num)) {
-            return 3 /* en vez de poner return se pone r*/
-        }  (parseInt)(num)
-        
-            else (
-            return num % 2 /* en vez de poner return se pone r*/
-        )
-    }
-        
-  /**
-   * Function isPar (esto es una funcion buliana)
-   * para num: number
-   * returns: boolean // sera true si el numero es PAR
-   * Posibles Valores
-   *    True pares
-   *    False impar
-   
-     function isPar(num){
-       return num % 2
-   }
-    function isImpar (num){
-        return !! (num % 2)
-    }
-    /**
-     * Function monstrar
-     * @param r: bolean
-     * @param num: number
-     * @returns: void
-     * 
-     */
-
-    function mostrar (r,num){
-       /* let mesnajes - ¨[
-            El numero ... es impares
-            El numero ... es par
-         ]*/  
-        if (isPar) {
-            console.log{mensajes[0]
-        else {
-            console.log {mensajes[1] }
-        }
-        } 
-    }
-   /* Estas comillas francesas delimitan un template, sale con la tecla al lado de la p y despues barra espaciadora*/
- /*cadena = 'Hola' + user + ' que tal estas' esto es como se hacia antes pero ahora es extrapolar una variable
-cadena = 'Hola . &{user}, que tal estas'
-
-let numer = 23
-number = 28
-monstrar(isPar (number),number)
-
-let i
-if (isPar){
-    i = 0
-     1 = 1
+  *     3 no numeros (NaN)
+  * */
  
-}
-let i = (isPar) ? 0 : 1
- let number = 23
-
-function mostrar 2 (code,num) {
+ function  calculaQueEs(num) {
+    let r
+    if ( isNaN(num) || Array.isArray(num) || typeof num === 'boolean' ) {
+      // num === true || num === false  
+      // no es un número
+      r = 3
+    } else if (parseInt(num) != num) {
+        // es un numero decimal
+      r = 2
+    } else {
+      r =   num % 2
     }
- let mensajes = [ 'El numero $ {num}]
+   return r
+}
+
+
+/**
+* Function isPar
+* @param num: number
+* @returns: boolean
+* Posibles valores
+*    true pares
+*    false impar
+* Genera excepciones si el parámetro no es numerico
+*  2 si el valor es un numero decimal
+*  3 si el valor no es un número
+*/
+
+function isPar(num) {
+      if ( isNaN(num) || Array.isArray(num) || typeof num === 'boolean' ) {
+          throw 3 // 'El valor no es un número'
+      }  else if (parseInt(num) != num) {
+          throw 2 //'El valor es un numero decimal'
+      }
+    return !(num % 2)
+}
+
+function isImpar(num) {
+    return !!(num % 2)
+}
+
+/**
+ * Function mostrar
+ * @param num: number
+ * @returns: void
+ * 
+ */
+
+/*   function mostrar(isPar, num) {
+    let mensajes = [
+        `El número ${num} es par`,
+        `El número ${num} es impar`
+    ] 
+    if (isPar) {
+      console.log(mensajes[0])
+    } else {
+      console.log(mensajes[1])
+    }
+} */
+
+function mostrar(num) {
+  let mensajes = [
+      `El número ${num} es par`,
+      `El número ${num} es impar`,
+      `El número ${num} es decimal, que no es ni par ni impar`,
+      `El valor ${num} no es un número`,
+  ] 
+  /* let i = 1
+  if (isPar) {
+    i = 0
+  }  */
+  let i
+  try {
+      i = (isPar(num)) ? 0 : 1
+  } catch (error) {
+      i = error
+  }
+  console.log(mensajes[i])
+}
+
+/**
+ * Function mostrar2
+ * @param code: mumber // sera 0 sies par y 1 si es impar
+ * @param num: number
+ * @returns: void
+*/
+
+let number = 0
+number = 23
+number = 28
+number = 3.5
+number = 'Pepe'
+number = {}
+number = []
+number = true
+number = false
+
+mostrar(number)
+
+////////////////////////////////////////////////////
+// Version final
+
+function mostrar2 (code, num) {
+  let mensajes = [
+      `El número ${num} es par`,
+      `El número ${num} es impar`,
+      `El número ${num} es decimal, que no es ni par ni impar`,
+      `El valor ${num} no es un número`,
+  ] 
+  console.log(mensajes[code])
+}
+
+let numero = 0  
+numero = 25
+numero = 30
+numero = 3.3
+numero = 'Pepe'
+numero = {}
+numero = [] 
+numero = false
+numero = true
+
+// mostrar2(calculaQueEs(numero), numero)   
+// mostrar2(numero % 2, numero)   
+
+
+
+/*  try {
+    // noExiste()
+    let x = 3
+    throw 'Probando un error'
+} catch (error) {
+    console.log('Lo siento, ha habido un error:', error)
+} */
+
+
