@@ -53,4 +53,3 @@ number = 5
 console.log(factorial2(number))
 
 
-
