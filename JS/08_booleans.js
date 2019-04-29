@@ -1,4 +1,8 @@
-/* if(condicion) {
+/*
+
+Condicionales en JS
+
+if(condicion) {
     // codigo
 }
 
@@ -14,32 +18,27 @@ if(condicion) {
     // codigo B
 } else {
     // codigo C
-} */
+} 
+
+*/
 
 let x = 3
 x = 5
 x = '3'
 
-// Comparación igual ==
-// Comparación idéntico (en valor y tipo) ===
-// Comparación distinto != (sólo tiene en cuenta el valor)
-// Comparación no-idéntico !== (tiene en cuenta ambas cosas)
-
-if( x = 3 ) {
-    console.log('Es correcto')
-} else {
-    console.log('Es un árbol de nísperos')
-}
+// Comparacion igual  ==
+// comparacion idéntico (en valor y tipo) ===
+// comparacion distinto !=
+// comparació no-idéntico !==
 
 // Casting a boolean
 // Valores falsy -> false
-
 x = false
 x = undefined
 x = ''
 x = NaN
 x = 0
-
+x = null
 // Valores truly -> true
 x = true
 x = 25
@@ -48,8 +47,8 @@ x = {}
 x = []
 x = function () {}
 
-if(x) {
-    console.log('Es verdadero')
+if( x ) {
+   console.log('Es verdadero')
 } else {
     console.log('Es falso')
 }

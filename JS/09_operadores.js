@@ -70,4 +70,14 @@ let mensajes = [
     'No se admiten menores de edad'
 ]
 
-console.log(mensajes[i])
+console.log(mensaje )
+
+
+/* && y esto es el simbolo- Esto es lo que significa AND
+|| -
+! es el simbolo del Not, un not por delante de algo lo combierte en buliano
+var 1 && (var 2 || var3) si no te acuerdas que va antes, se pone parentesis */
+
+
+
+
