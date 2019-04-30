@@ -8,28 +8,27 @@ header{
     width: 100%;
     background: #565454;
     color: # fff
-    paddingtop-top: 1rem;
+    padding-top: 1rem;
     padding-botton: 1rem;
 }
 header img{
     width: 100px;
     margin-left: 46%;
-    margin-top: 1%;
+    margin-top: 0.5%;
     border-radius: 100%;
 }
 
 h1 {
     text-align: center;
     font-family"helvetica";
-    font-size:1,5rem;
-    text.align-left;
-}
+    font-size:1.5rem;
+    }
 
 h2 {
     background-color: rgb(30, 212, 54);
     text-align: center;
     font-family"helvetica";
-    font-size: 1,5rem;
+    font-size: 1.5rem;
    
 
 }
@@ -57,7 +56,7 @@ article p, article ul {
     font-family"helvetica";
     font-size: 1.rem;
     color: #717c7c;
-    margin-botton: 1,5rem;
+    margin-botton: 1.5rem;
 }
 
 article ul {
@@ -88,7 +87,7 @@ footer{
     padding: 2rem;
     color: #ffffff;
     text-align: center;
-    font-size: 1,5rem;
+    font-size: 1.5rem;
 }
 
 
