@@ -11,8 +11,8 @@ header{
     width: 100%;
     background: #565454;
     color: # fff
-    paddingtop-top: 1em;
-    padding-botton: 1em;
+    paddingtop-top: 1rem;
+    padding-botton: 1rem;
 }
 header img{
     width: 100px;
@@ -24,14 +24,15 @@ header img{
 h1 {
     text-align: center;
     font-family"helvetica";
-    font-size:1,5 em;
+    font-size:1,5 rem;
+    text.align-left;
 }
 
 h2 {
     background-color: rgb(0, 255, 115);
     text-align: center;
     font-family"helvetica";
-    font-size: 1 em;
+    font-size: 1,5 rem;
    
 
 }
@@ -46,19 +47,20 @@ article{
     border-bottom: #888282 dotted 1px;
 }
 
-article h2 {
-    float: left;
-    border-botton:solid 2px #21abc5;
-    padding-botton: 5px;
-    line-he
+article h3 {
+    background-color: rgb(0, 255, 115);
+    font-size: 1 rem;
+    margin-left: 2 rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    line-height:
 }   
 
 article p, article ul {
     margin-left:  20%;
     font-family"helvetica";
-    font-size: 1,5 em;
+    font-size: 1,5 rem;
     color: #717c7c;
-    margin-botton: 1,5 em;
+    margin-botton: 1,5 rem;
 }
 
 article ul {
@@ -66,9 +68,18 @@ article ul {
     list-style: square;
 }
 
-article h3{
-    font-size: 1 em;
-    margin-left: 2 em;
+article h4{
+    background-color: rgb(0, 255, 115);
+    font-size: 1 rem;
+    margin-left: 2 rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    line-height:
+}
+
+article h5{
+    background-color: rgb(0, 255, 115);
+    font-size: 1 rem;
+    margin-left: 2 rem;
     font-family: Georgia, 'Times New Roman', Times, serif
     line-height:
 }
@@ -76,14 +87,13 @@ article h3{
 footer{
     width: 100%;
     background: #565454;
-    margin-top: 3 em;
-    padding: 2 em;
+    margin-top: 3 rem;
+    padding: 2 rem;
     color: #ffffff;
-
-footer p {
-    text-align:center;
-
+    text-align: center;
+    font-size: 1,5 rem;
 }
+
 
 
 
