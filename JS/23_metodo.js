@@ -13,11 +13,16 @@ let vuelo = {
     }
 }
 
-vuelo.mostrar =function (obj) = this) {
+vuelo.mostrar =function (obj = this) {
     for (const key in obj) {
         const element = obj[key]
+        if (typeof element === 'function') {
+            continue
+        }
+
+        
         if (typeof element != 'object') {
-            console.log( `La propiedad ${key} vale ${element}`)
+                console.log( `La propiedad ${key} vale ${element}`)
         }
         else {
             console.log( `La propiedad ${key} vale ...`)
