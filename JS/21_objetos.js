@@ -13,14 +13,16 @@
         calle: 'Pez',
         num: '3',
         poblacion: 'Madrid'
-    },
+    }
+
     saludar: function () {
         console.log(`Hola, soy ${this.nombre} y mi tengo ${this.edad} años`)
     },
     altura: 179
 }
 
-//let user1 = new Object()
+// let user1 = new Object()
+// user1.nombre="Pepe"
 
 
 let user2 = {
