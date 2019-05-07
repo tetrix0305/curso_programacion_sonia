@@ -10,10 +10,13 @@ console.clear()
 console.log(nombres)
 console.log(newNombres)
 
-A - B- C- D
 //Colas y pilas - todas 
 
-nombres.push()
-nombres.pop()
-nombres.shift()
-nombres.unshift()
+nombres.push() // AÑADE AL FINAL
+nombres.pop() // QUITA AL FINAL 
+
+nombres.shift() // QUITA EL PRIMERO
+nombres.unshift() // AÑADIR AL PRINCIPIO
+
+nombres.push('Aurora')
+
