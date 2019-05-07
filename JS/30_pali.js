@@ -1,3 +1,7 @@
+/**
+ * Comprobar si una frase es un palindromo
+ * Se le 
+ */
 
 
 
@@ -16,5 +20,3 @@
 
 
 
-
-function isPali2(cadena = '')
