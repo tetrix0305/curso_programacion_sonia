@@ -1,4 +1,5 @@
 /**
+ * EJERCICIO  26 HASTA PAG 24
  * Dada una cadena de caracteres hay que indicar si esta formado:
  * solo por letras mayusculas,
  * solo por letras minusculas,
