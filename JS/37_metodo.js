@@ -11,62 +11,28 @@ let vuelo = {
         time:  '2004-09-23 10:42',
         ciudad: 'Los Angeles'
     },
-
-}
-
-vuelo.mostrar = function (obj = this) {
-    for (const key in obj) {
-        const element = obj[key]
-        if (typeof element === 'function') {
-            continue
+    toString : function (obj = this) {
+        let output = ''
+        for (const key in obj) {
+            const element = obj[key]
+            if (typeof element === 'function') {
+                continue
+            }
+            if (typeof element === 'object') {
+                output = output + `La propiedad ${key} vale ...` + '\n'
+                output = output + obj.toString(element) }
+            else {
+                output = output + `La propiedad ${key} vale ${element}` + '\n'
+            }
         }
-        /* if (typeof element === 'object') {
-            console.log( `La propiedad ${key} vale ...`)
-            obj.mostrar(element) }
-        else {
-             console.log( `La propiedad ${key} vale ${element}`)
-        } */
-
-        if (typeof element !== 'object') {
-            console.log( `La propiedad ${key} vale ${element}`)
-        }
-        else { // element === 'object'
-            console.log( `La propiedad ${key} vale ...`)
-            obj.mostrar(element) 
-        }
+        return output
+    },
+    mostrar : function () {
+        console.log(this.toString())
     }
 }
 
-/**
- * @param : object
- * @returns: string
- */
-vuelo.toString = function (obj = this) {
-    let output = ''
-    for (const key in obj) {
-        const element = obj[key]
-        if (typeof element === 'function') {
-            continue
-        }
-        if (typeof element === 'object') {
-            output = output + `La propiedad ${key} vale ...` + '\n'
-            // output += `La propiedad ${key} vale ...`
-            output = output + obj.toString(element) }
-        else {
-             output = output + `La propiedad ${key} vale ${element}` + '\n'
-             //output += `La propiedad ${key} vale ${element}`
-        }
-    }
-    return output
-}
-
-vuelo.mostrarFinal = function () {
-    console.log(this.toString())
-}
-
-// vuelo.mostrar()
-
-vuelo.mostrarFinal()
+vuelo.mostrar()
 
 
 
