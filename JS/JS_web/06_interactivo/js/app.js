@@ -1,3 +1,3 @@
-import { Saludador } from "./saludador.js"   
+import { main} from "./saludador.js"   
 
-document.addEventListener ('DOMContentLoaded',()=> console.log(new Saludador()))
+document.addEventListener ('DOMContentLoaded', main )

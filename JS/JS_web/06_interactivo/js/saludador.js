@@ -1,28 +1,25 @@
-export class Saludador{
-    constructor(){
-        this.aQuien=''
-        this.msg = [`Hola `, `Adios `]
-          
-    /**Seleccionar nodos del DOM */
-    this.inNombre = document.querySelector('#in-nombre')
-    this.btnSaludar = document.querySelector('#btn-saludar')
-    this.btnDespedirse = document.querySelector('#btn-despedirse')
 
- /**Para asignar manejadores a los nodos */
-    this.btnSaludar.addEventListener('click',this.saludar.bind(this))
-    this.btnDespedirse.addEventListener('click', this.despedirse.bind(this))
-    }
+export function main () {}
 
-    saludar() {
-        this.aQuien = this.inNombre.value
-        console.dir(this.inNombre)
-        console.log(this.msg[0] + this.aQuien)
-    }
+let aQuien =''
+let msg =['Hola', 'Adios']
 
 
-    despedirse() {
-        this.aQuien = this.inNombre.value
-        console.log(this.msg[1] + this.aQuien)
-    }
+/**Seleccionar nodos del DOM */
+    let.inNombre = document.quer
+    let.btnSaludar = document.querySelector('#btn-saludar')
+    let.btnDespedirse = document.querySelector('#btn-despedirse')
+
+btnSaludar.addEventListener('click') despedirse)
+
+function saludar () {
+        aQuien= inNombre.value
+        console.log(msg[0] + aQuien)
+    }    
+
+ function despedirse() {
+    aQuien= inNombre.value
+    console.log(msg[1]+ aQuien)
+)
+
 }
-
