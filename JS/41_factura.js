@@ -11,7 +11,7 @@
  * y actualice el valor de la propiedad correspondiente.
  * Añadir otro método que muestre por pantalla el importe total de la factura
  * (en un formato HTML adecuado)
- * 
+ * Los arrays que nos vamos a encontrar son de objetos.
  */
 (function(){
 
@@ -26,25 +26,27 @@
            dirección: 'c/ Marques de ', 
            teléfono: '917256983', 
            NIF: 'M-64584741'},
-       items: [
+       items: [ //esto es un array de objetos, el resultado de precio x cantidad da un array de number
            {descripcion: 'Libro 1', precio: 20, cantidad: 12},
            {descripcion: 'Libro 2', precio: 24, cantidad: 10},
            {descripcion: 'Libro 3', precio: 34, cantidad: 7},
        ],
-       importeTotal: 0, 
+       //map y reduce, paso de un array de objetos aun unico numero que lo ha sumado todo, sin un utilizar un bucle
+       importeTotal: 0, //es una variable calculada
        tipoIVA: 0.23, 
        formaPago: 'efectivo',
-       calculaImporte: function() {
+       calculaImporte: function() { //map proyecta un array
            let iva = this.tipoIVA < 1 ? 1 + this.tipoIVA : this.tipoIVA
-           return this.items.map(item => item.precio * item.cantidad).reduce((a,b) => a+b)*iva
+           return this.items.map(item => item.precio * item.cantidad).reduce((a,b) => a+b)*iva //reduce me devuelve siempre un numero, aunque que se puede utilizar para otrasa cosas
        },
        actualizaImporte: function () {
            this.importeTotal = this.calculaImporte()
        },
        muestraImporte: function () {
-           this.actualizaImporte()
-           let msg = 'El importe total (IVA incluido) es ' + this.importeTotal.toFixed(2) + ' €'
-           console.log(msg)
+           //this.actualizaImporte()
+          // let msg = 'El importe total (IVA incluido) es ' + this.importeTotal.toFixed(2) + ' €'
+          let msg = 'El importe total (IVA incluido) es ' + this.calculaImporte.toFixed(2) + ' €'
+          console.log(msg)
        }
    }
    factura.muestraImporte()
