@@ -1,25 +1,31 @@
-//  como es una funcion no puede faltar los parentesis y corchetes
- // Es un fichero que exporta algo
+/** como es una funcion no puede faltar los parentesis y corchetes
+ Es un fichero que exporta algo*/  
  
-export function controller() {
+ export function controller () {
 
     console.log('Controller cargado')
 
     let nombre = ''
+    let msgInicial = ''
 
-    /**Nodos del DOM  */
-    const inNombre    = document.querySelector('in-nombre')
-    const btnborrar   = document.querySelector('btn-borrar')
-    const output      = document.querySelector('output')
+    /** Nodos del DOM */
+    const inNombre = document.querySelector('#in-nombre')
+    const btnBorrar = document.querySelector('#btn-borrar')
+    const output = document.querySelector('#output')
 
-    /** Asignar manejadores de eventos*/
-    inNombre.addEventListener('input',oninputNombre)
-    btnborrar.addEventListener('click', borrar)
+    msgInicial = output.innerHTML + ' '
 
-    function oninputNombre () {
-        console.dir(inNombre.value)
+    /** Asignar manejadores de eventos */
+    inNombre.addEventListener('input', onInputNombre)
+    btnBorrar.addEventListener('click', borrar)
+
+    function onInputNombre() {
+        nombre = inNombre.value
+        output.innerHTML = msgInicial + nombre.toUpperCase()
     }
-}
+
     function borrar() {
         
     }
+
+}
