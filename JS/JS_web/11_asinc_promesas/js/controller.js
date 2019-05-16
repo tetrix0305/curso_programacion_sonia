@@ -94,6 +94,6 @@ function onSaludar(2){
      }).then( (datos)=> {
           console.log (`${datos [1]},soy ${datos[0]}`)
      })
-}
+} 
 
 }
