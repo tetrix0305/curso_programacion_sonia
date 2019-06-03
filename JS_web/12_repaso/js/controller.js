@@ -27,7 +27,7 @@ export function controller(ev) {
 
     // Procedimiento habitual
 
-    // 1. Referencia a los Nodos del DOM que me interesan
+    // 1. Referencia o Definir  a los Nodos del DOM que me interesan
 
     /* const inNombre =  document.querySelector('#inNombre')
     const outSaludo =  document.querySelector('#outSaludo')
