@@ -1,23 +1,26 @@
-export function controller(ev) {
+export function controller () {
+
+console.dir(document.querySelector)
 
     // Procedimiento habitual
-
-    // 1. Referencia alos Nodos del Dom que me interesan
-
-    const aNodosQuestion = document.querySelectorAll(',question')
-    const aNodosQuestion = document.querySelectorAll(',respuesta')
+    const aNodosQuestion = document.querySelectorAll ('.question')
+    //const aNodosRespuesta = document.querySelectorAll ('.respuesta')
 
 
-    // 2. Definir los manejadores de eventos
+      // 2. Definir los manejadores de eventos
 
-    aNodosQuestion.forEach( item) => { item.addEventiListener('Click',onclick) })
+      aNodosQuestion.forEach(item => item.addEventListener ('click', onClick))
 
-    //3. Implementar los manejadores de eventos
+ // 3. Implemantar los manejadores de eventos
 
-    function onclick(ev) {
-        console.dir(ev)
-        
+ function onClick(ev) {
     
-    }
-
+     console.dir (ev.target)
+     aNodosQuestion.forEach(item => item.classList.remove('destacado'))
+     ev.target.classList.add('destacado')
+     //aNodosRespuesta.forEach(item => item.hidden = true)
+     aNodosQuestion.forEach(item => item.nextElementSibling.hidden = true)
+     ev.target.nextElementSibling.hidden = false
+ }
 }
+
