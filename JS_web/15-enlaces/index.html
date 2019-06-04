@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enlaces sociales</title>
+    <title>Lista de animales</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
     crossorigin="anonymous">
@@ -12,13 +12,27 @@
     <script src="./js/bootstrap.js" type="module"></script>
 </head>
 <body>
-    <h1>Contacta conmigo</h1>
-    <ul class="menu social-menu">
-        <li><a href="#" title="Facebook" class="fab fa-facebook-f"></a></li>
-        <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="#" title="Github"><i class="fab fa-github"></i></a></i></li>
-        <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></i></li>
-    </ul>
+    <header>
+        <h1> Lista de Animales</h1>
+    </header>
+    <section>
+        <div class='new'>
+            <div class="control-group">
+                <label for="animal">Nuevo animal</label>
+                <div class='flex'>
+                    <input type="text" name="animal" id="inAnimal">
+                    <button type='button' id="btnAdd" title="Añadir animal"><i class="fas fa-plus-circle"></i></button>
+                    <button type='button' id="btnClear" title="Borrar todos los animales"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="flex output">
+                <div class='lista'>...</div>
+                <div class='tabla'>...</div>        
+        </div>
+    </section>
+    <footer>
+        <address>Alejandro Cerezo</address>
+    </footer>
 </body>
 </html>
