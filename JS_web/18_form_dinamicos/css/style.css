@@ -16,9 +16,14 @@ header, footer {
     align-items: center;
 }
 
-.curso {
-    margin-left: 5rem;
-    margin-right: 5rem;
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section>div {
+    width: 50%;
+    padding: 2rem;
 }
 
 fieldset {
