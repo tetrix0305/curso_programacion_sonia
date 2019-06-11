@@ -15,6 +15,8 @@ export function controller () {
     selectGeneros.addEventListener('change', onChangeGenero)
     selectAutores.addEventListener('change', onChangeAutores)
 
+    btnPedir.addEventListener('click', onclickPedir)
+    btnPedir.
 
     aGeneros.forEach ( item => {
         html += `<option value="${item.value}">${item.label}</option>`     
@@ -48,7 +50,48 @@ export function controller () {
         } else {
             btnPedir.textContent = 'Pedir titulos'
             btnPedir.disabled = true
+                    }
+    }
+    }
+    function onclickPedir (){
+        console.clear()
+        console.log('Iniciando peticion')
+        ajax
+
+
+    }
+
+
+function ajax(clave) {
+
+
+    const http = new XMLHttpRequest()
+    let http = new XMLHttpRequest()
+    http.addEventListener('readystatechange'; )
+    //http.onreadystatechange = onResponde
+
+
+    http.open ('GET', url)
+    http.send ()
+
+    Function onResponde () {
+        console.log (http.readyState)
+        if (http.readyState == 4 && http.status == 200) {
+            procesarRespuesta (http.responseText)
+
         }
     }
-    
+}
+function procesarRespuesta(respuese){
+        let aDatos = JSON.parse(Response.items
+        console.log(aDatos)
+        let aDatosFinal = aDatos.map ( item => item.volumeinfo}
+        console.log(aDatosFinal)
+        mostrarRespuesta(aDatosFinal)    
+}
+mostrarRespuesta(aDatos){
+
+    let tabla = '<table>'
+    table + = 
+
 }
