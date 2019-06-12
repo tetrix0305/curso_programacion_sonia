@@ -24,3 +24,8 @@ section figure {
     padding: 1rem;
     text-align: center;
 }
+
+dialog{
+    border: none
+    background-color: bisque;
+}
