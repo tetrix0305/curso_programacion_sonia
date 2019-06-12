@@ -25,7 +25,14 @@ section figure {
     text-align: center;
 }
 
-dialog{
-    border: none
+dialog {
+    border: none;
     background-color: bisque;
+}
+
+dialog div {
+    margin: 1rem 0;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
 }
