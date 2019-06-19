@@ -9,6 +9,6 @@ import { MenuComponent } from './menu/menu.component';
   imports: [
     CommonModule
   ],
-  exports: [HeaderComponent]
+  exports: [HeaderComponent, FooterComponent]
 })
 export class CoreModule { }
